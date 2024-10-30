@@ -1,0 +1,251 @@
+/* Estilizações globais */
+* {
+    font-family: "Jua";
+}
+
+
+/* Header */
+
+header {
+    display: flex;
+    flex-direction: row;
+    height: 65px;
+    width: 100%; 
+    justify-content: space-between;
+    /* position: fixed; */
+    
+}
+
+
+header .logo img {
+    width: 100%;
+    height: 80%;
+}
+
+header .menu {
+    width: 50%;
+
+}
+
+header nav.menu ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0%;
+    margin: 1em 2em 1em 1em;
+    justify-content: flex-end;
+    
+}
+
+header nav ul li {
+    padding: 1%;
+    margin: 0 1%;
+
+}
+
+ul li a {
+    color: #000;
+    text-decoration: none;
+    font-family: "Jua";
+}
+
+@media only screen and (max-width: 480px) {
+    header nav.menu ul{
+        margin: 10% 0;
+    }   
+
+    header .logo img {
+        width: 90%;
+    }
+}
+
+
+/* Main */
+
+main {
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+    align-content: center;
+    text-align: center;
+}
+
+main div {
+    background-color: #FFF;
+    height: 100px;
+}
+
+@media only screen and (max-width: 490px) {
+    main {
+        height: 300px;
+    }
+    
+    main div {
+        height: 50px;
+    }
+
+    main div h2 {
+        display: none;
+    }
+
+    main div h1{
+        vertical-align: center;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    main div {
+        height: 80px;
+    }
+}
+
+/* Sections */
+
+section {
+    text-align: center;
+}
+
+section.mostpopular div, section.specials div{
+    border: 1px solid rgba(127, 127, 127, 0.5);
+    margin: 0 20px;
+    border-radius: 5px;
+    width: 33.33%
+}
+
+section.mostpopular ul , section.specials ul{
+    list-style: none;
+    display: flex;  
+    flex-direction: row;
+    padding: 0px;
+    justify-content: space-evenly;
+}
+
+section.mostpopular li, section.specials li{
+    margin: 0;
+    flex-grow: 1;
+}
+
+section.mostpopular img, section.specials img{
+    width: 100%;
+    height: 85%;
+}
+
+section.mostpopular p , section.specials p {
+    margin: 0 auto;
+    width: 85%;
+}
+
+section.mostpopular h6 , section.specials h6 {
+    color: red;
+    font-size: 1.3rem;
+    margin: 2% 0;
+}
+
+
+@media only screen and (max-width: 1024px){
+    section.mostpopular p , section.specials p {
+        display: none;
+    }               
+}
+
+@media only screen and (max-width: 480px){
+    section.mainpopular, section.specials {
+        display: block;
+    }
+
+    section.mostpopular h3 , section.specials h3 {
+        display: none;
+    }
+
+    section.mostpopular div, section.specials div {
+        margin: 2%;
+    }
+
+    section.mostpopular {
+        margin-bottom: 10%;
+    }
+}
+
+
+/* Most Populars */
+
+.mostpopular {
+    margin-bottom: 50px;
+}   
+
+#about{
+    align-items: stretch;
+}
+
+
+/* About */
+
+#about .content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+
+#about div {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    border-radius: 5px;
+    height: 408px;
+    
+}
+
+#about p{
+    font-size: 2rem;
+    line-height: 2;
+    text-align: justify;
+}   
+
+#about img {
+    border-radius: 5px;
+}
+
+
+
+@media only screen and (max-width: 1024px){
+    #about .content {
+        display: block;
+    }
+
+    #about div {
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+
+    #about p{
+    font-size: 1.5rem;
+    line-height: 1.4;
+    text-align: center;
+    margin: 0 auto;   
+    }   
+} 
+
+
+@media only screen and (max-width: 480px){
+    #about img {
+        width: 100%;
+    }
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+footer h4 span {
+    color: red;
+}
