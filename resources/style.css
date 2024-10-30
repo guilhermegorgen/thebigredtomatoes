@@ -83,7 +83,7 @@ main div {
     }
     
     main div {
-        height: 50px;
+        height: 80px;
     }
 
     main div h2 {
@@ -157,7 +157,7 @@ section.mostpopular h6 , section.specials h6 {
     }
 
     section.mostpopular h3 , section.specials h3 {
-        display: none;
+        font-size: 0.8rem;
     }
 
     section.mostpopular div, section.specials div {
